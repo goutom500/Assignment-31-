@@ -1,0 +1,137 @@
+
+img{
+    max-width: 100%;
+}
+/* header */
+.our-header .navbar-brand {
+	font-weight: 700;
+	font-size: 25px;
+}
+.our-header .navbar-brand span {
+	color: #d6a512;
+	font-size: 19px;
+	height: 32px;
+	width: 27px;
+	display: inline-block;
+	background-color: transparent;
+	text-align: center;
+	border-radius: 6px;
+	line-height: 29px;
+	border: 2px solid #ffc107;
+}
+
+.our-menu{
+    margin-right: 50px;
+}
+.our-menu li {
+	padding: 0 10px;
+}
+
+/* banner */
+.banner{
+    background-image: url(https://i.postimg.cc/T2Lq0wkg/pexels-elle-hughes-1680172.jpg);
+    background-size: cover;
+    background-position: top center;
+    padding: 240px 0;
+    position: relative;
+    z-index: 1;
+}
+.banner::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+    background-color: #000;
+    opacity: .5;
+    z-index: -1;
+}
+.banner-caption h5 {
+	font-weight: 500;
+	font-size: 22px;
+}
+.banner-caption h2 {
+	font-weight: 600;
+	font-size: 40px;
+	margin: 30px 0;
+}
+
+.man-content {
+	margin-top: 85px;
+}
+.man-content h2 {
+	font-size: 40px;
+	font-weight: 600;
+}
+.man-content p {
+	font-size: 21px;
+	line-height: 37px;
+}
+
+/* fethure-section */
+.fethure-section{}
+.fecture-items {
+	height: 250px;
+	box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    transition: all .4s ease-in-out;
+}
+.fecture-items:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+    transition: all .4s ease-in-out;
+}
+.fecture-img{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.fecture-img img {
+	height: 100%;
+	width: auto;
+	max-width: inherit;
+	position: relative;
+	left: -50px;
+}
+.extra-1 img {
+	position: relative;
+	left: -100px !important;
+}
+.extra-2 img {
+	position: relative;
+	left: -42px !important;
+}
+.fecture-text{
+    width: 60%;
+    padding: 20px;
+}
+
+/* pricing-section */
+.pricing-section h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+/* hovoer */
+.items-img{}
+.items-img a{
+    position: relative;
+    display: block;
+}
+.items-img a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(255, 193,7, .6);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ;
+}
+.items-img:hover a::after{
+    opacity: 1;
+    visibility: visible;
+    transition: .4s ;
+
+}
